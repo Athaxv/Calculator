@@ -10,8 +10,12 @@ Array.from(buttons).forEach((button) => {
       string = "";
       document.querySelector('input').value = string;
     }
-    else if (e.target.innerHTML == 'M+') {
-      string = "Kabhi khub bhi karle BKL";
+    else if (e.target.innerHTML == '') {
+      string = "";
+      document.querySelector('input').value = string;
+    }
+    else if (e.target.innerHTML == '()') {
+      string = ((string));
       document.querySelector('input').value = string;
     }
     else {
